@@ -1,14 +1,24 @@
+
 from scripts.deposit import run_deposit
 from scripts.nav_updater import run_nav_update
 from scripts.rebalance_trigger import run_rebalance
 from scripts.event_watcher import watch_events
+from scripts.investment_monitor import monitor_investments
+from scripts.place_orders_binance import run_order_execution
 
 def main():
-    print("\n=== Exxa Fund CLI ===")
-    print("1. Deposit")
-    print("2. Update NAV")
-    print("3. Rebalance")
-    print("4. Watch Events")
+    print("""
+==================================
+     Exxa Fund Python Console     
+==================================
+[1] ➕  Deposit
+[2] 📈  Update NAV
+[3] 🔁  Trigger Rebalance
+[4] 🧾  Watch Contract Events
+[5] 🕵️  Monitor Investments
+[6] 📊  Execute Orders on Binance
+[0] ❌  Exit
+""")
     choice = input("Select an option: ")
 
     if choice == "1":
@@ -19,8 +29,16 @@ def main():
         run_rebalance()
     elif choice == "4":
         watch_events()
+    elif choice == "5":
+        monitor_investments()
+    elif choice == "6":
+        run_order_execution()
+    elif choice == "0":
+        print("Exiting...")
+        return
     else:
-        print("Invalid selection.")
+        print("Invalid option. Try again.")
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
