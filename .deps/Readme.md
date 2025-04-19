@@ -31,7 +31,6 @@ From the root of your project:
 ```bash
 npm install @openzeppelin/contracts
 npm install @chainlink/contracts
-```
 
 .deps/
 └── npm/
@@ -41,6 +40,10 @@ npm install @chainlink/contracts
     │       └── token/ERC20/...
     └── @chainlink/
         └── contracts/src/v0.8/interfaces/AggregatorV3Interface.sol
+
+```
+
+
 
 // For ownership logic
 import "@openzeppelin/contracts/access/Ownable.sol";
