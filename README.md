@@ -9,8 +9,9 @@ Built for modularity, transparency, and multichain deployment, it powers decentr
 
 - **Current:** v1.0 (Stable & Compilable)
 - **Status:** Testnet Deployment in Progress
-- **Networks:** Ethereum, Binance Smart Chain, Polygon, Base, Arbitrum, Optimism...
-- **License:** MIT (code visible for audit; proprietary, not reusable without consent)
+- **Target Networks:** Ethereum, BNB Chain, Polygon, Base, Arbitrum, Optimism
+- **Solidity Version:** `^0.8.29`
+- **License:** MIT (Public for transparency – not for commercial reuse)
 
 ---
 
