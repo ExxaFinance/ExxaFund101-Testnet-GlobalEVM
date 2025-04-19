@@ -1,0 +1,25 @@
+{
+  "name": "exxafund-global-evm",
+  "version": "1.0.0",
+  "description": "Global EVM deployment for ExxaFund101 smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Specify your deployment script here\"",
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [
+    "evm",
+    "exxafund",
+    "smart-contracts",
+    "solidity"
+  ],
+  "author": "Exxa Finance",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^6.6.0",
+    "web3": "^4.0.3",
+    "@chainlink/contracts": "^0.7.0",
+    "@openzeppelin/contracts": "^5.0.1"
+  }
+}
