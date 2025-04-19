@@ -21,7 +21,7 @@ This repository includes everything required to deploy and operate a decentraliz
 - 💼 Modular Solidity contracts for deposits, NAV tracking, admin control, and rebalancing
 - 🧠 Backend Python infrastructure for NAV calculation, event monitoring, and rebalancing execution
 - 🔗 Chainlink price feed integration
-- 🪙 Binance integration (via `ccxt`) for real market order execution
+- 🪙 Exchange Integration integration (Example with Binance via `ccxt` here) for market order execution
 - 🌐 Multichain ready architecture for cross-chain compatibility
 
 ---
