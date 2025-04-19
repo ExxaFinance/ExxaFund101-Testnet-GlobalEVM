@@ -1,6 +1,5 @@
 # ExxaFund101 – Global EVM Version (v1.0)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.29-lightgrey)](https://soliditylang.org)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Chainlink Oracle Ready](https://img.shields.io/badge/Oracle-Chainlink-blueviolet)](https://chain.link)
