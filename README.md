@@ -1,6 +1,7 @@
 # ExxaFund101 – Global EVM Version (v1.0)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ExxaFinance/exxafund101-ci/test.yml?branch=main)](https://github.com/ExxaFinance/exxafund101-ci/actions)
+![build](https://github.com/ExxaEcosystem/ExxaFund101-Testnet-GlobalEVM/actions/workflows/test.yml/badge.svg)
+(https://github.com/ExxaFinance/exxafund101-ci/actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.29-lightgrey)](https://soliditylang.org)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
