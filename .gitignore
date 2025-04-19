@@ -1,0 +1,50 @@
+# Solidity build artifacts
+artifacts/
+cache/
+typechain/
+coverage/
+out/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & OS junk
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ABI or generated JSON (optional if committed elsewhere)
+*.abi.json
+*.dbg.json
+
+# Deps (optional if rebuilt)
+.deps/
+
+# Hardhat/Foundry/Test output
+test-output/
+coverage/
+gas-report.txt
+
+# Build files
+build/
+dist/
+
+# Logs
+*.log
+
+# Secrets
+*.key
+*.pem
+*.secrets
