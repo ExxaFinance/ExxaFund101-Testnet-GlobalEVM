@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.29+commit.ab55807c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ExxaFundExit.sol": "IERC20"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ExxaBaseStorage.sol": {
+			"keccak256": "0x541c86ac6534f6d22b2c7bebab78fcd7903a5966d86581534bb4a57c1a50933c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5fdf9479027890cc2aff9eda5fd8fb709b671ef3022e03e7628a260f98ab6440",
+				"dweb:/ipfs/QmUJ1s5Ftj6hUjWjkMV9UVLSGAneZSZDCHfKSnacEtc3r9"
+			]
+		},
+		"ExxaFundExit.sol": {
+			"keccak256": "0x4535ddbf0100e7b7385ee773184b99b5a309d78dd6b32cd4553c683f0a0dac1f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d7b1d4748c8355e6964d6de05ad5b2d8458ef8880f798c1dfb8188975e6c1c75",
+				"dweb:/ipfs/QmSmoPHwvxo7LcGCzXz2F2WFBbikhLDyozkMkaiGb4hWrh"
+			]
+		}
+	},
+	"version": 1
+}

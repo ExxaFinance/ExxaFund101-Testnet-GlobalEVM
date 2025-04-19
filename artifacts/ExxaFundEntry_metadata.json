@@ -1,0 +1,163 @@
+{
+	"compiler": {
+		"version": "0.8.29+commit.ab55807c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_usdt",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amountUSD",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "indexAtEntry",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "currentIndexPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountUSD",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "usdt",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Handles new investments into the fund using USDT. Inherits base storage.",
+			"kind": "dev",
+			"methods": {},
+			"title": "ExxaFundEntry",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ExxaFundEntry.sol": "ExxaFundEntry"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db",
+				"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9"
+			]
+		},
+		"ExxaBaseStorage.sol": {
+			"keccak256": "0x541c86ac6534f6d22b2c7bebab78fcd7903a5966d86581534bb4a57c1a50933c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5fdf9479027890cc2aff9eda5fd8fb709b671ef3022e03e7628a260f98ab6440",
+				"dweb:/ipfs/QmUJ1s5Ftj6hUjWjkMV9UVLSGAneZSZDCHfKSnacEtc3r9"
+			]
+		},
+		"ExxaFundEntry.sol": {
+			"keccak256": "0xbcf93e39b392625bcd2bef2ebc64649bb688ecbc0c63068b0620da601064493f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://504366606623652e08db0da63eab07bf508870455911a2280d2c1bdc42e139d9",
+				"dweb:/ipfs/QmdLDxKtbiiXmxsmTAKQP9JuYBNNuA8A8bLZQdTDPmVK4m"
+			]
+		}
+	},
+	"version": 1
+}
