@@ -4,9 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Chainlink Oracle Ready](https://img.shields.io/badge/Oracle-Chainlink-blueviolet)](https://chain.link)
 ![dotenv](https://img.shields.io/badge/Config-dotenv-green?logo=envato)
-![CCXT](https://img.shields.io/badge/Exchange-CCXT-yellow?logo=binance)
-![Web3.py](https://img.shields.io/badge/Web3.py-333333?logo=python&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-E2C684?logo=hardhat&logoColor=black)
 
 This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
 Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
