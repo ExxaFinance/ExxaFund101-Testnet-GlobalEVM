@@ -1,25 +1,28 @@
 # ExxaFund101 – Global EVM Version (v1.0)
 
-This repository contains the **EVM-compatible version** of the ExxaFund101 architecture. Built for maximum modularity, transparency, and compatibility with multiple EVM networks, it powers decentralized crypto fund management and enables smart, rules-based investing.
+This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
+Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
 
 ---
 
 ## 📦 Version
+
 - **Current:** v1.0 (Stable & Compilable)
 - **Status:** Testnet Deployment in Progress
-- **Target Networks:** Ethereum, Binance Smart Chain (BSC), Polygon, Base, Arbitrum, Optimism...
-- **License:** MIT (code public for transparency, not open-source or for commercial reuse)
+- **Networks:** Ethereum, Binance Smart Chain, Polygon, Base, Arbitrum, Optimism...
+- **License:** MIT (code visible for audit; proprietary, not reusable without consent)
 
 ---
 
 ## 🔍 Overview
-This repository includes everything required to deploy and operate a decentralized index fund smart contract system:
 
-- Modular Solidity contracts for user deposits, investment records, rebalancing requests, NAV updates, and fund administration
-- A unified base storage contract (`ExxaBaseStorage`) for data consistency across modules
-- NAV tracking contract (`ExxaNAV`) with Chainlink oracle compatibility
-- Rebalancing request handler (`ExxaRebalanceRequest`) for external TWAP logic
-- Admin control module (`ExxaAdmin`) for managing fees, oracles, and backend access
+This repository includes everything required to deploy and operate a decentralized index fund system:
+
+- 💼 Modular Solidity contracts for deposits, NAV tracking, admin control, and rebalancing
+- 🧠 Backend Python infrastructure for NAV calculation, event monitoring, and rebalancing execution
+- 🔗 Chainlink price feed integration
+- 🪙 Binance integration (via `ccxt`) for real market order execution
+- 🌐 Multichain ready architecture for cross-chain compatibility
 
 ---
 
@@ -41,41 +44,27 @@ This repository includes everything required to deploy and operate a decentraliz
 
 ## 🌐 Multichain Ready
 
-The architecture supports **cross-chain deposits and NAV tracking**:
-- USDT is assumed as the base currency.
-- Chainlink oracles are pluggable on each supported chain.
-- Designed to be deployed independently all EVM blockchains.
+- USDT is used as the stablecoin reference on all chains.
+- Chainlink oracles are pluggable per deployment.
+- Architecture supports sidechains and rollups:
+  - ✅ Ethereum Mainnet/Testnets
+  - ✅ Binance Smart Chain
+  - ✅ Polygon
+  - ✅ Arbitrum / Optimism
+  - ✅ Base
+  - ✅ zkSync (future-ready)
 
 ---
 
 ## 🧠 Smart Contract Modules
 
-### `ExxaBaseStorage.sol`
-Central shared data layout for:
-- Investment history (per user + global mapping)
-- Index value at deposit
-- Internal ID counters
-
-### `ExxaFundEntry.sol`
-- Accepts user deposits (in USDT)
-- Records investment ID, timestamp, amount, index at entry
-
-### `ExxaNAV.sol`
-- Stores and updates global NAV/index
-- Can be updated manually or using Chainlink price feeds
-- Tracks NAV per user over time
-
-### `ExxaRebalanceRequest.sol`
-- External module to initiate rebalancing events
-- Compatible with external scripts, bots, or keepers
-- Triggers backend execution (TWAP or other strategies)
-
-### `ExxaAdmin.sol`
-- Central authority for fund management
-- Pause/unpause deposits
-- Set oracle addresses
-- Adjust fees
-- Set backend automation operators
+| Contract | Description |
+|---------|-------------|
+| `ExxaBaseStorage.sol` | Shared storage structure for all modules |
+| `ExxaFundEntry.sol` | Handles USDT deposits and logs investment data |
+| `ExxaNAV.sol` | Tracks NAV via Chainlink or manual inputs |
+| `ExxaRebalanceRequest.sol` | Receives and stores rebalance triggers |
+| `ExxaAdmin.sol` | Owner/admin logic for parameters, fees, oracles |
 
 ---
 
@@ -87,36 +76,61 @@ Central shared data layout for:
 
 ---
 
-## 📁 Repository Structure
+## 🐍 Python Backend (Off-chain Logic)
 
-```
-/contracts
-    ExxaBaseStorage.sol
-    ExxaFundEntry.sol
-    ExxaNAV.sol
-    ExxaRebalanceRequest.sol
-    ExxaAdmin.sol
+| Script                  | Purpose |
+|-------------------------|---------|
+| `deposit.py`            | Simulate or send USDT deposit via `ExxaFundEntry.deposit()` |
+| `nav_updater.py`        | Updates NAV using live Chainlink prices |
+| `rebalance_trigger.py`  | Triggers rebalancing events |
+| `event_watcher.py`      | Listens to blockchain events: deposits, NAV updates, etc. |
+| `investment_monitor.py` | Monitors investment performance and NAV delta |
+| `binance_executor.py`   | Places real orders via Binance using `ccxt` |
+| `main.py`               | CLI runner for all scripts |
 
-/scripts
-    deploy_with_ethers.ts
-    deploy_with_web3.ts
+### 🔧 Utilities & Config
 
-/artifacts
-    (Compiled contract ABIs + metadata)
-```
+- `wallet.py` – Private key & signer setup  
+- `web3utils.py` – RPC connection, block tracking  
+- `abi_loader.py` – Loads contract ABI from `/config/abi`  
+- `chainlink.py` – Fetches prices from Chainlink Aggregators  
+- `contract_interface.py` – Connects to deployed contracts  
+- `config.py` – Loads all `.env` environment variables  
 
 ---
 
-## 🛠 Deployment Prerequisites
-
-- Solidity ^0.8.20
-- EVM-compatible chain & RPC endpoint
-- Chainlink price feeds (if used)
+## 📁 Repository Structure
 
 ```bash
-# Install dependencies
-npm install ethers web3 dotenv
-```
+/contracts
+  ├── ExxaBaseStorage.sol
+  ├── ExxaFundEntry.sol
+  ├── ExxaNAV.sol
+  ├── ExxaRebalanceRequest.sol
+  └── ExxaAdmin.sol
+
+/python-backend
+  ├── config/
+  │   ├── config.py
+  │   └── abi/
+  ├── scripts/
+  │   ├── deposit.py
+  │   ├── nav_updater.py
+  │   ├── rebalance_trigger.py
+  │   ├── event_watcher.py
+  │   ├── investment_monitor.py
+  │   └── binance_executor.py
+  ├── utils/
+  │   ├── wallet.py
+  │   ├── web3utils.py
+  │   ├── abi_loader.py
+  │   ├── chainlink.py
+  │   └── contract_interface.py
+  └── main.py
+
+/.env.sample
+/README.md
+
 
 ---
 
