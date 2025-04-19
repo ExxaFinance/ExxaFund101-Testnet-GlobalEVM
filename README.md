@@ -3,6 +3,15 @@
 This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
 Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ExxaEcosystem/exxafund101-ci/test.yml?branch=main)](https://github.com/ExxaEcosystem/exxafund101-ci/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Solidity](https://img.shields.io/badge/Solidity-^0.8.29-lightgrey)](https://soliditylang.org)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
+[![Chainlink Oracle Ready](https://img.shields.io/badge/Oracle-Chainlink-blueviolet)](https://chain.link)
+
+> Cross-chain EVM crypto fund infrastructure by Exxa Finance — multi-contract, modular, and testnet-ready.
+
+
 ---
 
 ## 📦 Version
