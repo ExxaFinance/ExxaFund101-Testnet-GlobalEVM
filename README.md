@@ -120,18 +120,38 @@ This repository includes everything required to deploy and operate a decentraliz
 ## 📁 Repository Structure
 
 ```bash
-/contracts
-  ├── ExxaBaseStorage.sol
-  ├── ExxaFundEntry.sol
-  ├── ExxaNAV.sol
-  ├── ExxaRebalanceRequest.sol
-  └── ExxaAdmin.sol
+ExxaFund101-Testnet-GlobalEVM/
+├── .deps/                      # NPM packages (e.g., OpenZeppelin, Chainlink)
+│   └── README.md               # Installed dependency list
 
-/python-backend
-  described in python-backend file.
+├── artifacts/                  # ABIs & metadata (compiled contracts)
+│   ├── ExxaAdmin.json
+│   ├── ExxaNAV.json
+│   ├── ...
+│   └── README.md
 
-/.env.sample
-/README.md
+├── contracts/                  # Solidity smart contracts (modular fund logic)
+│   ├── ExxaFundEntry.sol
+│   ├── ExxaNAV.sol
+│   ├── ...
+│   └── ExxaAdmin.sol
+
+├── scripts/                    # TypeScript deployment scripts (web3/ethers)
+│   ├── deploy_with_ethers.ts
+│   ├── deploy_with_web3.ts
+│   └── ...
+
+├── python-backend/             # Automation, oracles, and cross-chain logic
+│   ├── config/                 # Config + ABIs
+│   ├── scripts/                # deposit.py, nav_updater.py, ...
+│   ├── utils/                  # web3, wallet, ABI tools
+│   └── main.py
+
+├── .env.sample                 # Example environment file
+├── .gitignore                 # Git exclusion rules
+├── package.json               # JS dependencies for scripts/
+├── requirements.txt           # Python requirements
+└── README.md                  # Project overview
 
 ```
 
