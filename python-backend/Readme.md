@@ -55,3 +55,53 @@ python-backend/
 │
 ├── main.py                     # (Optional) Entrypoint for CLI automation
 └── Readme.md                   # This file
+
+```
+
+---
+
+## 🚀 How It Works
+
+- deposit.py triggers a contract call to record a user deposit and track entry NAV.
+- nav_updater.py fetches live Chainlink price and updates ExxaNAV.
+- rebalance_trigger.py sends a rebalancing request to the smart contract system.
+- binance_executor.py mirrors on-chain deltas with centralized orders (via CCXT).
+- event_watcher.py listens to smart contract events (Deposit, NAVUpdate, Rebalance).
+- .env manages sensitive keys, RPCs, and private wallet access.
+
+---
+
+## 🚀 How It Works
+
+```bash
+
+# Clone repository
+git clone https://github.com/exxafinance/ExxaFund101
+
+# Navigate into backend
+cd python-backend
+
+# Setup virtual environment (optional)
+python -m venv venv && source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+```
+
+## ⚙️ Notes
+
+- ✅ EVM chains are supported via custom RPCs (WEB3_PROVIDER_URI in .env)
+- ✅ Compatible with all Exxa smart contracts using standard ABI interfaces
+- ⚠️ All secrets (RPCs, wallets) must be declared in .env
+- ❌ No automation daemon is included — run scripts manually or via cronjob
+- 🧪 Testnet first, but structure supports cross-chain prod-ready deployment
+
+---
+
+## 📎 License & Ownership
+
+This backend is public for documentation & transparency purposes only.
+Any reproduction, fork, or derivative work is strictly prohibited unless authorized by Exxa Finance.
+
+---
