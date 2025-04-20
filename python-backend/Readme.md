@@ -23,6 +23,7 @@ It bridges **on-chain logic**, **Chainlink price feeds**, and **CEX infrastructu
 ## 🗂 Directory Structure
 
 ```plaintext
+
 python-backend/
 │
 ├── .env/                       # Environment variables (local .env loading)
@@ -35,7 +36,12 @@ python-backend/
 │
 ├── config/                     # Central config management
 │   ├── abi/
-│   │   └── ChainlinkAggregator.json
+│       ├── ExxaFundEntry.json
+│       ├── ExxaNAV.json
+│       ├── ExxaRebalanceRequest.json
+│       ├── ExxaAdmin.json
+│       ├── ChainlinkAggregator.json
+│       └── IERC20.json
 │   └── config.py
 │
 ├── utils/                      # Core utilities
