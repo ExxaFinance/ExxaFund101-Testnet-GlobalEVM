@@ -1,4 +1,4 @@
-# 🧪 Deployment Scripts – ExxaFund101
+# Deployment Scripts – ExxaFund101
 
 This folder contains TypeScript-based deployment scripts and helpers designed to deploy ExxaFund101 smart contracts on any **EVM-compatible blockchain** using either **ethers.js** or **web3.js**.
 
