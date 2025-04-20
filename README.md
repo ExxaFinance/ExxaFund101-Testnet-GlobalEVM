@@ -94,7 +94,7 @@ This repository includes everything required to deploy and operate a decentraliz
 
 ---
 
-## 🐍 Python Backend (Off-chain Logic)
+## Python Backend (Off-chain Logic)
 
 | Script                  | Purpose |
 |-------------------------|---------|
