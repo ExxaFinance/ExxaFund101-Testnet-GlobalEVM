@@ -89,6 +89,8 @@ pip install -r requirements.txt
 
 ```
 
+---
+
 ## ⚙️ Notes
 
 - ✅ EVM chains are supported via custom RPCs (WEB3_PROVIDER_URI in .env)
