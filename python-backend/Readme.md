@@ -1,50 +1,57 @@
 # 🧠 ExxaFund Python Backend
 
-This module powers the **automation and cross-chain integration layer** for ExxaFund101 on EVM blockchains.  
-It bridges **smart contracts**, **Chainlink price feeds**, and **CEX execution (e.g. Binance)** through Python logic designed for fund rebalancing, NAV tracking, and user investment monitoring.
+This module powers the **automation and integration layer** for the ExxaFund101 smart contract ecosystem across EVM-compatible blockchains.  
+It bridges **on-chain logic**, **Chainlink price feeds**, and **CEX infrastructure** through modular and scalable Python tooling.
+
+> Designed for **multi-chain**, **multi-contract**, and **real-time rebalancing** strategies.
 
 ---
 
 ## 📦 Features
 
-- 🔗 Web3 integration to interact with EVM smart contracts (`Web3.py`)
-- 📈 Chainlink oracle reader for price aggregation
-- 📤 Binance API integration for centralized trade execution (`ccxt`)
-- 🧾 ABI autoloader and dynamic contract interface mapper
-- 🛠 Modular architecture: deposit handler, NAV updater, rebalancer, event monitor
-- 🔐 Secure environment management using `.env`
+- 🔗 Web3.py integration to interact with EVM smart contracts
+- 📊 Chainlink price feed integration (with ABI decoding)
+- 📤 Binance API execution layer via `ccxt`
+- 🧠 Contract interface auto-loader and ABI injector
+- 🔐 Secure key & environment config through `.env` support
+- 🧱 Modular architecture (each action = standalone script)
+- 🧰 Built-in utilities for wallets, transactions, gas, decoding
+- ⚙️ CLI-ready and orchestrator-compatible
 
 ---
 
 ## 🗂 Directory Structure
 
-```text
+```plaintext
 python-backend/
 │
-├── .env/                         # Environment variables
+├── .env/                       # Environment variables (local .env loading)
 │   ├── test-env.py
 │   ├── test.txt
 │   └── .env.sample
 │
-├── config/                       # Configuration loaders and ABIs
+├── .idea/                      # IntelliJ / PyCharm workspace files (optional)
+│   └── workspace.xml
+│
+├── config/                     # Central config management
 │   ├── abi/
 │   │   └── ChainlinkAggregator.json
 │   └── config.py
 │
-├── utils/                        # Utility scripts (wallets, chainlink, ABI, web3)
-│   ├── abi_loader.py
-│   ├── chainlink.py
-│   ├── contract_interface.py
-│   ├── wallet.py
-│   └── web3utils.py
+├── utils/                      # Core utilities
+│   ├── abi_loader.py           # Loads ABI dynamically from JSON
+│   ├── chainlink.py            # Chainlink oracle price fetcher
+│   ├── contract_interface.py   # Binds ABI + address into callable contracts
+│   ├── wallet.py               # Signs & manages private key actions
+│   └── web3utils.py            # Common Web3 helpers (RPC setup, gas, encoding)
 │
-├── scripts/                      # Executable logic
-│   ├── binance_executor.py       # Places buy/sell orders via Binance (ccxt)
-│   ├── deposit.py                # Calls ExxaFundEntry.deposit()
-│   ├── event_watcher.py          # Listens to contract events (Deposit, NAV update)
-│   ├── investment_monitor.py     # Tracks individual user investment performance
-│   ├── nav_updater.py            # Updates index/NAV via Chainlink
-│   └── rebalance_trigger.py      # Calls ExxaRebalanceRequest to trigger rebalancing
+├── scripts/                    # Executable core scripts
+│   ├── binance_executor.py     # Places orders via Binance API
+│   ├── deposit.py              # Calls `ExxaFundEntry.deposit()`
+│   ├── event_watcher.py        # Watches contract events (Deposit, NAV updates)
+│   ├── investment_monitor.py   # Tracks individual user performance
+│   ├── nav_updater.py          # Updates NAV via Chainlink into contract
+│   └── rebalance_trigger.py    # Triggers TWAP rebalancing requests
 │
-└── main.py                       # Optional entrypoint for CLI or orchestration
-```
+├── main.py                     # (Optional) Entrypoint for CLI automation
+└── Readme.md                   # This file
