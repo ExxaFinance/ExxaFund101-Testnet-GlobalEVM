@@ -131,17 +131,15 @@ This repository includes everything required to deploy and operate a decentraliz
 
 ### 🔧 Utilities & Config
 
-| File                    | Purpose |
-|-------------------------|---------|
-| `connectWallet.ts`       | Manages wallet connection and integration with Web3 providers |
-| `contractInterface.ts`   | Interfaces with deployed smart contracts on the blockchain |
-| `web3utils.js`           | Contains utility functions for interacting with Web3 (e.g., RPC connection, gas estimation) |
-| `wallet.js`              | Handles wallet interactions (e.g., network selection, account management) |
-| `web3utils.js`           | Utility functions for Web3.js (e.g., managing network connections) |
-| `.env`                   | Stores sensitive configuration variables (API keys, wallet private keys, etc.) |
-| `.gitignore`             | Git exclusions for node_modules, build files, etc. |
-| `next.config.js`         | Configuration for Next.js project setup |
-| `package.json`           | Manages dependencies and project scripts |
+- `connectWallet.ts` – Manages wallet connection and integration with Web3 providers  
+- `contractInterface.ts` – Interfaces with deployed smart contracts on the blockchain  
+- `web3utils.js` – Contains utility functions for interacting with Web3 (e.g., RPC connection, gas estimation)  
+- `wallet.js` – Handles wallet interactions (e.g., network selection, account management)  
+- `web3utils.js` – Utility functions for Web3.js (e.g., managing network connections)  
+- `.env` – Stores sensitive configuration variables (API keys, wallet private keys, etc.)  
+- `.gitignore` – Git exclusions for node_modules, build files, etc.  
+- `next.config.js` – Configuration for Next.js project setup  
+- `package.json` – Manages dependencies and project scripts  
 
 ---
 
