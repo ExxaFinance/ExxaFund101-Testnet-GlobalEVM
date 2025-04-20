@@ -157,7 +157,7 @@ This repository includes everything required to deploy and operate a decentraliz
 
 > This project is made public **for informational purposes only**.
 > 
-> 📎 **It remains the exclusive intellectual property of Exxa Finance.**
+> **It remains the exclusive intellectual property of Exxa Finance.**
 > 
 > 🚫 Commercial use, reproduction, or redistribution is **strictly prohibited** without prior written consent.
 
