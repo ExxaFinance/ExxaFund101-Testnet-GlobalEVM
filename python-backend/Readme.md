@@ -71,7 +71,7 @@ python-backend/
 
 ---
 
-## 🚀 How It Works
+## 🛠 Setup & Installation
 
 ```bash
 
