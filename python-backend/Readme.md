@@ -60,7 +60,6 @@ python-backend/
 │
 ├── main.py                     # (Optional) Entrypoint for CLI automation
 └── Readme.md                   # This file
-
 ```
 
 ---
