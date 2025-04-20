@@ -145,7 +145,7 @@ This repository includes everything required to deploy and operate a decentraliz
 
 ## 📁 Repository Structure
 
-```
+```bash
 ExxaFund101-Testnet-GlobalEVM/
 ├── .deps/                      # NPM packages (e.g., OpenZeppelin, Chainlink)
 │   └── README.md               # Installed dependency list
