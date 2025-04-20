@@ -167,4 +167,4 @@ This repository includes everything required to deploy and operate a decentraliz
 
 - 🌐 Website: [https://exxafinance.com](https://exxafinance.com)
 - ✉️ Email: business@exxa.finance
-- 🧑‍💼 Partnerships: [See Telegram](https://t.me/exxafinancechat)
+- 🧑‍💼 Partnerships: use email or [See Telegram](https://t.me/exxafinancechat)
