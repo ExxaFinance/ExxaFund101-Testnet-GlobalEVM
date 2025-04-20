@@ -8,6 +8,9 @@ import Rebalance from "./pages/Rebalance";
 import NavView from "./pages/NavView";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
             <Route path="/deposit" element={<Deposit />} />
             <Route path="/rebalance" element={<Rebalance />} />
             <Route path="/nav" element={<NavView />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />  
           </Routes>
         </main>
         <Footer />
