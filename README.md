@@ -129,9 +129,7 @@ This repository includes everything required to deploy and operate a decentraliz
 | `rebalance.jsx`          | Interface for rebalancing investments manually |
 | `withdraw.jsx`           | Allows users to withdraw funds or assets from the system |
 
----
-
-## 🔧 Utilities & Config
+### 🔧 Utilities & Config
 
 | File                    | Purpose |
 |-------------------------|---------|
