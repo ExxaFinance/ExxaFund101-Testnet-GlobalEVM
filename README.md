@@ -128,23 +128,7 @@ This repository includes everything required to deploy and operate a decentraliz
   └── ExxaAdmin.sol
 
 /python-backend
-  ├── config/
-  │   ├── config.py
-  │   └── abi/
-  ├── scripts/
-  │   ├── deposit.py
-  │   ├── nav_updater.py
-  │   ├── rebalance_trigger.py
-  │   ├── event_watcher.py
-  │   ├── investment_monitor.py
-  │   └── binance_executor.py
-  ├── utils/
-  │   ├── wallet.py
-  │   ├── web3utils.py
-  │   ├── abi_loader.py
-  │   ├── chainlink.py
-  │   └── contract_interface.py
-  └── main.py
+  described in python-backend file.
 
 /.env.sample
 /README.md
