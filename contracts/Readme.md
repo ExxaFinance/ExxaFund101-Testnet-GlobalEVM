@@ -69,7 +69,7 @@ forge build
 
 ---
 
-## 🔗 EVM Compatibility
+## Notes
 
 - All deposits/withdrawals are done in USDT (can be extended to multistable)
 
