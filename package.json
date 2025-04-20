@@ -2,7 +2,6 @@
   "name": "exxafund-global-evm",
   "version": "1.0.0",
   "description": "Global EVM deployment for ExxaFund101 smart contracts",
-  "main": "index.js",
   "scripts": {
     "start": "echo \"Specify your deployment script here\"",
     "test": "echo \"No test specified\""
