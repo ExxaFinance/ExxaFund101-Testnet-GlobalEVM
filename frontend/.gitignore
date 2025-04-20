@@ -1,0 +1,16 @@
+# .gitignore
+
+# Node modules
+node_modules/
+
+# Dépendances du frontend
+/.next/
+
+# Variables d'environnement
+.env
+
+# Compilations de contrats et artifacts
+/artifacts/
+
+# Logs
+*.log
