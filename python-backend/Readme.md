@@ -23,7 +23,6 @@ It bridges **on-chain logic**, **Chainlink price feeds**, and **CEX infrastructu
 ## 🗂 Directory Structure
 
 ```plaintext
-
 python-backend/
 │
 ├── .env/                       # Environment variables (local .env loading)
