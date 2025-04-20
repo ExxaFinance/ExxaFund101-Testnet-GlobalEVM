@@ -67,7 +67,6 @@ This repository includes everything required to deploy and operate a decentraliz
   - ✅ Arbitrum / Optimism
   - ✅ Base
   - ✅ Linea
-  - ✅ Mantle
   - ✅ zkSync (future-ready)
   - ✅ Hyperliquid
   - ✅ dYdX
