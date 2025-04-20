@@ -58,10 +58,13 @@ Contracts are compatible with:
 
 ```bash
 solc --version          # Requires ^0.8.29
-
+```
+```Using Hardhat
 # Using Hardhat
 npx hardhat compile
+```
 
+```Using Foundry
 # Using Foundry
 forge build
 
