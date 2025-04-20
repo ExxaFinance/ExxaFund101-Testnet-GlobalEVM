@@ -1,13 +1,14 @@
 # ExxaFund101 – Global EVM Version (v1.0)
 
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.29-lightgrey)](https://soliditylang.org)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Chainlink Oracle Ready](https://img.shields.io/badge/Oracle-Chainlink-blueviolet)](https://chain.link)
 ![dotenv](https://img.shields.io/badge/Config-dotenv-green?logo=envato)
-
-![Status](https://img.shields.io/badge/Status-In%20Development-orange)
-![Tests](https://img.shields.io/badge/Tests-Coming%20Soon-lightgrey)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
+
+
+
 
 This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
 Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
