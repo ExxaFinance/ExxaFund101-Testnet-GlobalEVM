@@ -9,7 +9,6 @@
 
 
 
-
 This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
 Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
 
@@ -115,6 +114,36 @@ This repository includes everything required to deploy and operate a decentraliz
 - `chainlink.py` – Fetches prices from Chainlink Aggregators  
 - `contract_interface.py` – Connects to deployed contracts  
 - `config.py` – Loads all `.env` environment variables  
+
+---
+
+## 💻 Frontend (User Interface)
+
+| Page                    | Purpose |
+|-------------------------|---------|
+| `admin.jsx`              | Admin panel for controlling fund parameters (pause deposits, update fees, etc.) |
+| `history.jsx`            | Displays transaction history for the user |
+| `investments.jsx`        | User investments and portfolio overview |
+| `nav-history.jsx`        | Displays portfolio history and NAV tracking |
+| `overview.jsx`           | Dashboard overview of investments, NAV, etc. |
+| `rebalance.jsx`          | Interface for rebalancing investments manually |
+| `withdraw.jsx`           | Allows users to withdraw funds or assets from the system |
+
+---
+
+## 🔧 Utilities & Config
+
+| File                    | Purpose |
+|-------------------------|---------|
+| `connectWallet.ts`       | Manages wallet connection and integration with Web3 providers |
+| `contractInterface.ts`   | Interfaces with deployed smart contracts on the blockchain |
+| `web3utils.js`           | Contains utility functions for interacting with Web3 (e.g., RPC connection, gas estimation) |
+| `wallet.js`              | Handles wallet interactions (e.g., network selection, account management) |
+| `web3utils.js`           | Utility functions for Web3.js (e.g., managing network connections) |
+| `.env`                   | Stores sensitive configuration variables (API keys, wallet private keys, etc.) |
+| `.gitignore`             | Git exclusions for node_modules, build files, etc. |
+| `next.config.js`         | Configuration for Next.js project setup |
+| `package.json`           | Manages dependencies and project scripts |
 
 ---
 
