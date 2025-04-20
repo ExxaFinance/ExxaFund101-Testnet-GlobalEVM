@@ -58,15 +58,20 @@ This repository includes everything required to deploy and operate a decentraliz
 
 ## 🌐 Multichain Ready
 
-- USDT is used as the stablecoin reference on all chains.
+- USDT is used as the stablecoin reference on all chains. Others stablecoin will be added in the final structure.
 - Chainlink oracles are pluggable per deployment.
-- Architecture supports sidechains and rollups:
+- Architecture supports sidechains and rollups includes:
   - ✅ Ethereum Mainnet/Testnets
   - ✅ Binance Smart Chain
   - ✅ Polygon
   - ✅ Arbitrum / Optimism
   - ✅ Base
+  - ✅ Linea
+  - ✅ Mantle
   - ✅ zkSync (future-ready)
+  - ✅ Hyperliquid
+  - ✅ dYdX
+  - ✅ Celer Network
 
 ---
 
