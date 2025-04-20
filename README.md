@@ -37,6 +37,7 @@ This repository includes everything required to deploy and operate a decentraliz
 - 🔗 Chainlink price feed integration
 - 🪙 Exchange Integration integration (Example with Binance via `ccxt` here) for market order execution
 - 🌐 Multichain ready architecture for cross-chain compatibility
+- 🖥 Admin-facing frontend built using Next.js to interact with smart contracts on the testnet, offering an interface for deposits, rebalancing, and NAV management.
 
 ---
 
