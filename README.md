@@ -12,7 +12,7 @@
 This repository contains the **EVM-compatible version** of the ExxaFund101 architecture.  
 Built for modularity, transparency, and multichain deployment, it powers decentralized crypto fund management across Ethereum-compatible chains.
 
-> Cross-chain decentralized fund system built by Exxa Finance: EVM-compatible, modular, Chainlink-integrated, and Python-connected.
+> Cross-chain decentralized fund system built by Exxa Finance: EVM-compatible, modular, Chainlink-integrated, and Frontend & Backend connected.
 
 
 ---
