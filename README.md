@@ -148,12 +148,20 @@ ExxaFund101-Testnet-GlobalEVM/
 │   ├── utils/                  # web3, wallet, ABI tools
 │   └── main.py
 
-├── .env.sample                 # Example environment file
-├── .gitignore                 # Git exclusion rules
-├── package.json               # JS dependencies for scripts/
-├── requirements.txt           # Python requirements
-└── README.md                  # Project overview
+├── frontend/                   # Frontend UI for interacting with contracts
+│   ├── app/                    # Pages for different views (e.g., admin, investments)
+│   ├── lib/                    # Library for wallet and contract interactions
+│   ├── src/                    # Frontend components, pages, and styles
+│   ├── .env                    # Environment configuration
+│   ├── .gitignore              # Git exclusion rules
+│   ├── next.config.js          # Next.js configuration
+│   ├── package.json            # JS dependencies for frontend
+│   └── README.md               # Frontend overview
 
+├── .env.sample                 # Example environment file
+├── .gitignore                  # Git exclusion rules
+├── requirements.txt            # Python requirements
+└── README.md                   # Project overview
 ```
 
 ---
