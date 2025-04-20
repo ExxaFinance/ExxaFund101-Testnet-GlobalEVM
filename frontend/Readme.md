@@ -1,6 +1,7 @@
 # 🧠 ExxaFund Frontend
 
 This module serves as the **user-facing interface** for interacting with the ExxaFund101 ecosystem. Built using **Next.js** and **React**, it allows users to manage their investments, track NAV, make deposits, and interact with the decentralized fund. This frontend is designed to work seamlessly with the **EVM-compatible** ExxaFund101 smart contracts.
+This code is supposed to get improved constantly, so it may not be the complete version we are working on.
 
 ---
 
