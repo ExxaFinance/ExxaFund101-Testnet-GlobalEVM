@@ -103,7 +103,7 @@ This repository includes everything required to deploy and operate a decentraliz
 | `rebalance_trigger.py`  | Triggers rebalancing events |
 | `event_watcher.py`      | Listens to blockchain events: deposits, NAV updates, etc. |
 | `investment_monitor.py` | Monitors investment performance and NAV delta |
-| `binance_executor.py`   | Places real orders via Binance using `ccxt` |
+| `binance_executor.py`   | Places orders via Binance using `ccxt` |
 | `main.py`               | CLI runner for all scripts |
 
 ### 🔧 Utilities & Config
