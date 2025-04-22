@@ -91,7 +91,7 @@ This repository includes everything required to deploy and operate a decentraliz
 - **Admin Access:** Restricted via `Ownable`
 - **Storage:** Unified across contracts to prevent data mismatch
 - **Upgradeable Architecture:** Contracts are written modularly for proxy integration if needed
-
+- **AWS-256 Grade Security:** Python backend function are running on an AWS server to comply with the maximum security standards
 ---
 
 ## 💻 Python Backend (Off-chain Logic)
