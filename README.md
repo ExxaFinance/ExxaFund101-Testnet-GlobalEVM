@@ -68,9 +68,9 @@ This repository includes everything required to deploy and operate a decentraliz
   - ✅ Base
   - ✅ Linea
   - ✅ zkSync (future-ready)
-  - ✅ Hyperliquid
   - ✅ dYdX
   - ✅ Celer Network
+- Works also on Hyperliquid Blockchain (but Hyperliquid blockchain have a repo dedicaded with enhanced features related to the Hyperliquid Exchange)
 
 ---
 
