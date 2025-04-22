@@ -58,9 +58,9 @@ def place_orders(prices, total_usdt):
                 symbol,
                 quantity
             )
-            print(f"✅ Order filled: {order['id']}")
+            print(f" Order filled: {order['id']}")
         except Exception as e:
-            print(f"❌ Error placing order for {symbol}: {str(e)}")
+            print(f" Error placing order for {symbol}: {str(e)}")
 
 def main():
     print("--- EXXA Binance Rebalancer ---")
