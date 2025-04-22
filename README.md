@@ -70,7 +70,7 @@ This repository includes everything required to deploy and operate a decentraliz
   - ✅ zkSync (future-ready)
   - ✅ dYdX
   - ✅ Celer Network
-- Works also on Hyperliquid Blockchain (but Hyperliquid blockchain have an Exxa Finance repo dedicaded with enhanced features related to the Hyperliquid Exchange).
+- Works also on Hyperliquid Blockchain (but Hyperliquid blockchain have an Exxa Finance repo dedicaded with enhanced features related to the HyperEVM unique features for sending orders via smart contracts).
 
 ---
 
