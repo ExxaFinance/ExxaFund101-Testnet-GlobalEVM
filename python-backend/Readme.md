@@ -99,9 +99,10 @@ pip install -r requirements.txt
 
 - ✅ EVM chains are supported via custom RPCs (WEB3_PROVIDER_URI in .env)
 - ✅ Compatible with all Exxa smart contracts using standard ABI interfaces
-- ⚠️ All secrets (RPCs, wallets) must be declared in .env
+- ⚠️ All secrets (RPCs, wallets) must be declared in .env (Last Version .env to come)
 - ❌ No automation daemon is included — run scripts manually or via cronjob
 - 🧪 Testnet first, but structure supports cross-chain prod-ready deployment
+- 💻 All back end functions run on AWS server to comply with highest security standards
 
 ---
 
