@@ -16,7 +16,7 @@ It bridges **on-chain logic**, **Chainlink price feeds**, and **CEX infrastructu
 - 🔐 Secure key & environment config through `.env` support
 - 🧱 Modular architecture (each action = standalone script)
 - 🧰 Built-in utilities for wallets, transactions, gas, decoding
-- ⚙️ CLI-ready and orchestrator-compatible
+- ⚙️ CLI-ready and orchestrator-compatible (Coming versions will be clearer)
 
 ---
 
