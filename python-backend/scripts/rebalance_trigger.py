@@ -21,8 +21,8 @@ def trigger_rebalance():
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 
-        print(f"✅ Rebalance triggered in tx: {tx_hash.hex()}")
-        print("📦 Receipt status:", receipt.status)
+        print(f" Rebalance triggered in tx: {tx_hash.hex()}")
+        print(" Receipt status:", receipt.status)
     except ContractLogicError as e:
         print("Contract error:", e)
     except Exception as e:
