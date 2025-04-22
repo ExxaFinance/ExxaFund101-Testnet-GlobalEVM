@@ -9,7 +9,7 @@ def trigger_rebalance():
     contract = get_contract(w3, EXXA_REBALANCE_CONTRACT_ADDRESS, EXXA_REBALANCE_ABI_PATH)
 
     try:
-        print("⚖️  Sending rebalance request...")
+        print(" Sending rebalance request...")
         tx = contract.functions.requestRebalance().build_transaction({
             'from': wallet.address,
             'nonce': w3.eth.get_transaction_count(wallet.address),
