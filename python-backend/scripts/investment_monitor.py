@@ -16,16 +16,16 @@ def get_user_investments(user_address: str):
     try:
         investments = entry.functions.getUserInvestments(user_address).call()
     except Exception as e:
-        print("❌ Error fetching investments:", e)
+        print("Error fetching investments:", e)
         return
 
     if len(investments) == 0:
-        print("⚠️ No investments found for this address.")
+        print("No investments found for this address.")
         return
 
     # 2. Get current NAV
     current_nav = nav.functions.getCurrentNAV().call()
-    print(f"\n📈 Current NAV Index: {current_nav / 1e6:.6f}\n")
+    print(f"\n Current NAV Index: {current_nav / 1e6:.6f}\n")
 
     total_initial = Decimal(0)
     total_current = Decimal(0)
@@ -37,12 +37,12 @@ def get_user_investments(user_address: str):
         current_value = (Decimal(current_nav) / Decimal(index_at_entry)) * amount
         gain = current_value - amount
 
-        print(f"🪪 Investment ID: {inv_id}")
-        print(f"   📆 Timestamp: {inv[4]}")
-        print(f"   💵 Amount: {amount:.2f} USDT")
-        print(f"   🧮 Index at Entry: {index_at_entry:.6f}")
-        print(f"   📈 Current Value: {current_value:.2f} USDT")
-        print(f"   ➕ Gain/Loss: {gain:.2f} USDT\n")
+        print(f" Investment ID: {inv_id}")
+        print(f"    Timestamp: {inv[4]}")
+        print(f"    Amount: {amount:.2f} USDT")
+        print(f"    Index at Entry: {index_at_entry:.6f}")
+        print(f"    Current Value: {current_value:.2f} USDT")
+        print(f"    Gain/Loss: {gain:.2f} USDT\n")
 
         total_initial += amount
         total_current += current_value
