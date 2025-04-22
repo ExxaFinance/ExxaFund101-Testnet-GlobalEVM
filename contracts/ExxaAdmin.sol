@@ -28,7 +28,7 @@ contract ExxaAdmin is Ownable, ExxaBaseStorage {
         emit DepositsPaused(paused);
     }
 
-    // Set a new oracle address (e.g., Chainlink aggregator)
+    // Set a new oracle address (here it's Chainlink aggregator)
     function setOracle(address _oracle) external onlyOwner {
         require(_oracle != address(0), "Invalid oracle address");
         oracle = _oracle;
@@ -41,9 +41,9 @@ contract ExxaAdmin is Ownable, ExxaBaseStorage {
         emit BackendOperatorUpdated(_operator);
     }
 
-    // Define deposit fee (in basis points, max 5%)
+    // Define deposit fee (in basis points, max 2% but will mostly be 0.1%)
     function setDepositFee(uint256 feeBps) external onlyOwner {
-        require(feeBps <= 500, "Fee too high");
+        require(feeBps <= 200, "Fee too high");
         depositFeeBps = feeBps;
         emit DepositFeeUpdated(feeBps);
     }
