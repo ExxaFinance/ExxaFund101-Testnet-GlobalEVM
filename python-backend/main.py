@@ -11,13 +11,13 @@ def main():
 ==================================
      Exxa Fund Python Console     
 ==================================
-[1] ➕  Deposit
-[2] 📈  Update NAV
-[3] 🔁  Trigger Rebalance
-[4] 🧾  Watch Contract Events
-[5] 🕵️  Monitor Investments
-[6] 📊  Execute Orders on Binance
-[0] ❌  Exit
+[1]   Deposit
+[2]   Update NAV
+[3]   Trigger Rebalance
+[4]   Watch Contract Events
+[5]   Monitor Investments
+[6]   Execute Orders on Binance
+[0]   Exit
 """)
     choice = input("Select an option: ")
 
