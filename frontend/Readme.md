@@ -74,12 +74,12 @@ npm install
 ```
 
 ```bash
-# Web3 provider URL (Infura, Alchemy, etc.)
+# Web3 provider URL (Infura, Alchemy, etc.) (to be updated)
 WEB3_PROVIDER_URL="*URL*"
 ```
 
 ```bash
-# Smart contract addresses and other configuration
+# Smart contract addresses and other configuration (to be updated)
 EXXA_CONTRACT_ADDRESS="*Contract Address"
 ```
 
