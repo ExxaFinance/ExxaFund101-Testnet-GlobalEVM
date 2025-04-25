@@ -33,10 +33,8 @@ The design promotes **clarity**, **upgradability**, and **multichain consistency
 - Only the `owner` can:
   - Pause/unpause the fund
   - Update NAV
-  - Trigger rebalancing
   - Manage backend access
-- Funds are stored in the contract until rebalanced via Python/backend logic
-- The backend must use `ExxaRebalanceRequest.sol` to initiate fund adjustments
+  Other functions are coming.
 
 ---
 
