@@ -4,11 +4,9 @@ pragma solidity ^0.8.29;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./ExxaBaseStorage.sol";
 
-/**
- * @title ExxaAdmin
- * Handles global fund settings such as pausing, oracle setup, fees, and backend operators.
- * This is meant to be inherited or used as a base admin control layer.
- */
+// Handles global fund settings such as pausing, oracle setup, fees, and backend operators.
+// this is meant to be inherited or used as a base admin control layer.
+
 contract ExxaAdmin is Ownable, ExxaBaseStorage {
     bool public depositsPaused = false;
     address public oracle;
