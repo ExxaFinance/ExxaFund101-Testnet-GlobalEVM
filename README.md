@@ -92,54 +92,6 @@ This repository includes everything required to deploy and operate a decentraliz
 - **Storage:** Unified across contracts to prevent data mismatch
 - **Upgradeable Architecture:** Contracts are written modularly for proxy integration if needed
 - **AWS-256 Grade Security:** Python backend function are running on an AWS Cloud Servers to comply with the maximum security standards
----
-
-## 💻 Python Backend (Off-chain Logic)
-
-| Script                  | Purpose |
-|-------------------------|---------|
-| `deposit.py`            | Simulate or send USDT deposit via `ExxaFundEntry.deposit()` |
-| `nav_updater.py`        | Updates NAV using live Chainlink prices |
-| `rebalance_trigger.py`  | Triggers rebalancing events |
-| `event_watcher.py`      | Listens to blockchain events: deposits, NAV updates, etc. |
-| `investment_monitor.py` | Monitors investment performance and NAV delta |
-| `binance_executor.py`   | Places orders via Binance using `ccxt` |
-| `main.py`               | CLI runner for all scripts |
-
-### 🔧 Utilities & Config
-
-- `wallet.py` – Private key & signer setup  
-- `web3utils.py` – RPC connection, block tracking  
-- `abi_loader.py` – Loads contract ABI from `/config/abi`  
-- `chainlink.py` – Fetches prices from Chainlink Aggregators  
-- `contract_interface.py` – Connects to deployed contracts  
-- `config.py` – Loads all `.env` environment variables  
-
----
-
-## 💻 Frontend (User Interface)
-
-| Page                    | Purpose |
-|-------------------------|---------|
-| `admin.jsx`              | Admin panel for controlling fund parameters (pause deposits, update fees, etc.) |
-| `history.jsx`            | Displays transaction history for the user |
-| `investments.jsx`        | User investments and portfolio overview |
-| `nav-history.jsx`        | Displays portfolio history and NAV tracking |
-| `overview.jsx`           | Dashboard overview of investments, NAV, etc. |
-| `rebalance.jsx`          | Interface for rebalancing investments manually |
-| `withdraw.jsx`           | Allows users to withdraw funds or assets from the system |
-
-### 🔧 Utilities & Config
-
-- `connectWallet.ts` – Manages wallet connection and integration with Web3 providers  
-- `contractInterface.ts` – Interfaces with deployed smart contracts on the blockchain  
-- `web3utils.js` – Contains utility functions for interacting with Web3 (e.g., RPC connection, gas estimation)  
-- `wallet.js` – Handles wallet interactions (e.g., network selection, account management)  
-- `web3utils.js` – Utility functions for Web3.js (e.g., managing network connections)  
-- `.env` – Stores sensitive configuration variables (API keys, wallet private keys, etc.)  
-- `.gitignore` – Git exclusions for node_modules, build files, etc.  
-- `next.config.js` – Configuration for Next.js project setup  
-- `package.json` – Manages dependencies and project scripts  
 
 ---
 
@@ -166,22 +118,6 @@ ExxaFund101-Testnet-GlobalEVM/
 │   ├── deploy_with_ethers.ts
 │   ├── deploy_with_web3.ts
 │   └── ...
-
-├── python-backend/             # Automation, oracles, and cross-chain logic
-│   ├── config/                 # Config + ABIs
-│   ├── scripts/                # deposit.py, nav_updater.py, ...
-│   ├── utils/                  # web3, wallet, ABI tools
-│   └── main.py
-
-├── frontend/                   # Frontend UI for interacting with contracts
-│   ├── app/                    # Pages for different views (e.g., admin, investments)
-│   ├── lib/                    # Library for wallet and contract interactions
-│   ├── src/                    # Frontend components, pages, and styles
-│   ├── .env                    # Environment configuration
-│   ├── .gitignore              # Git exclusion rules
-│   ├── next.config.js          # Next.js configuration
-│   ├── package.json            # JS dependencies for frontend
-│   └── README.md               # Frontend overview
 
 ├── .env.sample                 # Example environment file
 ├── .gitignore                  # Git exclusion rules
