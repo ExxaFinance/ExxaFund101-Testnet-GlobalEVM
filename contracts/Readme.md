@@ -1,7 +1,7 @@
 # 📜 Smart Contracts – ExxaFund101 (Global EVM)
 
 This folder contains all the **Solidity smart contracts** powering the ExxaFund101 decentralized index fund.  
-They are designed for **modular deployment**, **multichain compatibility**, and seamless integration with a Python-based backend for automation and execution.
+They are designed for **modular deployment**, **multichain compatibility**, and integration with a Python-based backend for automation and execution.
 
 ---
 
@@ -13,7 +13,6 @@ They are designed for **modular deployment**, **multichain compatibility**, and 
 | `ExxaFundEntry.sol`         | Handles user deposits, investment records, and USDT onboarding              |
 | `ExxaFundExit.sol`          | Manages withdrawals, redemptions, and tracking exit NAV                    |
 | `ExxaNAV.sol`               | Updates and stores global NAV via Chainlink or admin input                  |
-| `ExxaRebalanceRequest.sol`  | Trigger module for rebalancing (to be picked up by Python backend)          |
 | `ExxaAdmin.sol`             | Admin-level controls: fees, oracle, backend roles, and emergency tools      |
 
 ---
@@ -72,7 +71,7 @@ forge build
 
 ## Notes
 
-- All deposits/withdrawals are done in USDT (can be extended to multistable)
+- All deposits/withdrawals are done in USDT (can be extended to others stablecoins)
 
 - Investments are recorded with unique IDs for full tracking
 
