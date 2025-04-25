@@ -4,8 +4,8 @@ pragma solidity ^0.8.29;
 import "./ExxaBaseStorage.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-/**Handles new investments into the fund using USDT. Inherits base storage.
- */
+// Handles new investments into the fund using USDT. Inherits base storage.
+ 
 contract ExxaFundEntry is ExxaBaseStorage {
     event Deposited(address indexed user, uint256 amountUSD, uint256 indexAtEntry, uint256 id);
 
