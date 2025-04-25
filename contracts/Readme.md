@@ -34,7 +34,8 @@ The design promotes **clarity**, **upgradability**, and **multichain consistency
   - Pause/unpause the fund
   - Update NAV
   - Manage backend access
-  Other functions are coming.
+
+ Other functions are coming.
 
 ---
 
