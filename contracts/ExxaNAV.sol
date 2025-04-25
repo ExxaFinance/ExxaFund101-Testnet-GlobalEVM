@@ -4,10 +4,8 @@ pragma solidity ^0.8.29;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
-/**
- * @title ExxaNAV
- * @notice Calculates and stores Net Asset Value (NAV) of the fund globally and per user.
- */
+// Calculates and stores Net Asset Value (NAV) of the fund globally and per user.
+
 contract ExxaNAV is Ownable {
     struct NAVRecord {
         uint256 timestamp;
